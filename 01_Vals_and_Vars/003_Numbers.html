@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Numbers</title>
+        <script type="text/javascript">
+            const a_float_even_looks_like_an_int = 6 // ALL Numbers are double-precise floating-point numbers.
+            const minimum_integer = Number.MIN_SAFE_INTEGER // -2^53+1 or -9,007,199,254,740,991
+            const maximum_integer = Number.MAX_SAFE_INTEGER //  2^53+1 or  9,007,199,254,740,991
+
+            // The parseInt and parsseFloat functions convert strings to numbers
+            const notQuitePi = parseFloat('3.14')   // 3.14
+            const an_int_two = parseInt('2.4414')   // 2
+            const scrap_float = parseFloat('pie')   // NaN
+
+            // Math Operators: + - * /
+
+            // Mod Operator: 42 % 10 is 2
+
+            // Raises to power 2**10 is 1024
+
+            // counter += 10 
+            // counter++ counter--
+            // ++counter --counter 
+
+            // Concatenation:
+            const myString = 'The Numper Pi is ' + notQuitePi
+
+            // even or odd -> use mod 2: % 2
+            const number_to_check = 10
+            output_string = "Number " + number_to_check + " is "
+            if (number_to_check % 2 == 0) {
+                output_string += " even."  
+            } else {
+                output_string += " odd."
+            }
+            console.log(output_string)
+        </script>
+
+    </head>
+    <body>
+        
+    </body>
+</html>

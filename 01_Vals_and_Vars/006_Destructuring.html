@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Destructuring Objects</title>
+        <script type="text/javascript">
+
+            // Convenient syntax for fetching multiple elements:
+            const numbers = [101, 42, 39, 77]
+            let [first, second] = numbers
+            console.log(`First element: ${first} second: ${second} off arr: ${numbers}`)
+                // First element: 101 second: 42 off arr: 101,42,39,77
+
+            // swap to vars (left: sudo-array, right: real array)
+            // [x, y] = [y, x]
+
+            let [fir, sec, ...others] = numbers
+            console.log(`See what \'others\' are: ${others} `)
+            
+        </script>
+
+    </head>
+    <body>
+        
+    </body>
+</html>
